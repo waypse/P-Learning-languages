@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../assets/css/agate.min.css">
+    <link rel="stylesheet" href="js.css">
+    <title>Apprendre la programmation web</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.1formatik.com/images/favicon/favicon-16x16.png">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="sticky-top">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-nav text-dark ms-4" href="/index.html">Créer un site internet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-3">
+                        <li class="nav-item">
+                            <a class="nav-link i-home" aria-current="page" href="../index.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-estate iconTest icon-nav-scroll i-home"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-home">Home</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagehtml/html.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-html5-alt iconTest icon-nav-scroll i-html"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-html">Html</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagecss/css.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-css3-simple iconTest icon-nav-scroll i-css"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-css">Css</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-java-script iconTest icon-nav-scroll i-js"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-js">JavaScript</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagephp/php.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-server-network-alt iconTest icon-nav-scroll i-php"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-php">Php</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION IMG -->
+        <section id="html-section-img">       
+        </section>
+        <!-- SECTION CONTENT -->
+        <section id="content" class="container-fluid row">
+            <h1 id="content-h1" class="text-center p-5 text-decoration-underline goodScroll">Le JavaScript</h1>
+            <!-- ASIDE -->
+            <aside class="col-lg-2 bg-light sticky-top menuVertical">
+                <a href="#content-h1" id="home">
+                    <h3>Accueil</h3>
+                </a>
+                <br>
+                <a href="#lumiere" id="tag">
+                    <h3>Exercice</h3>
+                </a>
+                <br>
+                <a href="#animation" id="creation">
+                    <h3>Animation</h3>
+                </a>
+            </aside>
+            <!-- CONTENT -->
+            <section class="col-lg-6 col-sm-10 col-11 offset-1 text-left mb-5">
+                <article>
+                    <h1>Qu'est ce que le JavaScript ?</h1>
+                    <hr>
+                    <p>
+                        Ajoutons un peu d'animation dans notre site. Le javasript est un langage qui change
+                        des langages web et qui se rapproche plus d'un véritbla langage de programmation avec
+                        des variables et autres fonctions. Il va donc permettre d'ajouter des animations, des éléments
+                        intéractifs ou bien de permettre a certains éléments de faire des choses particulières avec 
+                        certaines conditions.
+                    </p>
+                </article>
+
+                <article id="lumiere">
+                    <h1 class="goodScroll">Et que la lumière fut</h1>
+                    <hr>
+                    <p>Dans l'exercice d'aujourd'hui, nous allons faire quelque chose de simple encore une fois, Nous
+                        allons faire en sorte d'allumer et d'éteindre une ampoule.
+                    </p>
+                    <div class="img-lum">
+                        <button onclick="document.getElementById('myImage').src='img/LightBulbOn.png'">Allumer la Lumière</button>
+                        <img id="myImage" class="img-fluid" src="img/LightBulbOff.png" style="width:100px">
+                        <button onclick="document.getElementById('myImage').src='img/LightBulbOff.png'">Eteindre la lumière</button>
+                    </div>
+                    <p>Plutôt cool non ? Pour faire cet exercice vous allez avoir besoin des deux images d'ampoule que vous 
+                        pouvez retrouver <a href="img/Ampoule.zip">Ici</a>
+                        <br>
+                        Assuez vous que les images soient dans le même dossier que le fichier html que nous allons créer pour
+                        afficher notre ampoule.
+                    </p>
+                    <p>
+                        Nous allons donc créer un nouveau fichier html avec la même construction que notre première page, donc 
+                        avec un head un body etc etc.
+                    </p>
+                    <pre class="mb-0">
+                        <code class="html text-left" >
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt; Ampoule &lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
+                    <p>Un petit rappel de a quoi doit ressembler votre code html </p>
+                    </article>
+                    <article id="animation">
+                    <h1 class="goodScroll">Création de notre animation</h1>
+                    <hr>
+                    <p>Passons a la création de notre animation, nous allons commener avec les boutons.</p>
+                    <pre class="mb-0">
+                        <code class="html js" >
+&lt;button onclick="document.getElementById('ampoule').src='assets/Images/LightBulbOn.png'"&gt;
+Allumer ampoule
+&lt;/button&gt;
+                        </code>
+                    </pre>
+                    <p>
+                        Alors c'est un peu long mais pas de panique, nous allons décortiuer cette balise petit a petit.
+                        <br>
+                        <br>
+                        Button permet de définir que l'élément a l'apparence d'un bouton
+                        <br>
+                        <br>
+                        onlick est une condition, elle détecte si l'élément a été cliqué. Si oui alors elle exécute ce qui est 
+                        indiqué devant elle (onclick="fonction que l'on veut exécuter").
+                        <br>
+                        <br>
+                        document.getElementById('myImage') va permettre de modifier les caractéristique de l'élément qui comporte 
+                        l'id 'ampoule'. Dans notre cas, c'est notre image d'ampoule qui possède cet id.
+                        <br>
+                        <br>
+                        src='assets/Images/LightBulbOn.png' permet de dire a otre code JS quel ce qu'il doit afficher, donc notre 
+                        document.getElementById va venir récupérer l'image LightBubOn et l'afficher dans l'élément qui porte
+                        l'id myImage
+                    </p>
+                    <p>Nous avons donc un premier bouton pour allumer notre ampoule, pour créer celui qui va éteindre l'ampoule, il
+                        nous suffira juste de copier coller ce code et de changer l'image que nous souhaitons afficher (dans le
+                        fichier zip que je vous ai fait télécharger vous avez deux image, LightBulbOn et LightBulbOff, c'est 
+                        LightBulbOff que vous allez devoir utiliser pour éteindre l'ampoule)
+                    </p>
+                    <p> Nous allons maintenant créer une image avec la balise HTML &lt;img&gt;</p>
+                    <pre>
+                        <code class="html">
+&lt;img src="Image.jpg" id="ampoule"&gt;
+                        </code>
+                    </pre>
+                    <P>Voici la balise img. L'argument src permet de dire a notre balise quel image il dois afficher, un peu comme
+                        avec link pour savoir quel fichier CSS il doit utiliser. Dans notre exercice nous allons lui demander
+                        d'afficher l'ampoule éteinte donc dans src nous allons écrire src="LightBulbOff.png". Il faut aussi
+                        ajouter un id pour que notre code javasript reconaisse que c'est l'élément a modifier. C'est l'argument id
+                        qui va s'en occuper.
+                    </P>
+                    <p>Et puis c'est tout ! Il vous suffit juste d'assembler ces balises ensemble, dans l'exemple en début de page 
+                        j'ai mis un bouton, puis mon image et mon deuxième bouton
+                    </p>
+                    <pre>
+                        <code class="html">
+&lt;button onclick="document.getElementById('ampoule').src='assets/Images/LightBulbOn.png'"&gt;
+Allumer ampoule
+&lt;/button&gt;
+&lt;img src="Image.jpg" id="ampoule"&gt;
+&lt;button onclick="document.getElementById('ampoule').src='assets/Images/LightBulbOn.png'"&gt;
+Eteindre ampoule
+&lt;/button&gt;
+                        </code>
+                    </pre>
+                    <p>
+                        Voila a quoi ressemble le code (le chemin vers mes images est différent du votre, ne copiez collez pas
+                        ce chemin ou sinon votre page web ne trouvera pas les images.)
+                    </p>
+                    <p>Il ne vous reste plus qu'a enregistrer votre code au format HTML, d'ouvrir la page web et de 
+                        faire mumuse pendant des heures.
+                        <br>
+                        Dans la prochaine et dernière section, nous allons apprendre a transférer des informations avec PHP.
+                    </p>
+                </article>
+                <article id="navbar-footer" class="col-lg-12 d-flex justify-content-between ">
+                    <a href="/pagecss/css.html"> <i class="uil uil-arrow-left i-css text-dark"></i> </a>
+                    <a href="/index.html"> <i class="uil uil-estate i-home text-dark"> </i> </a>
+                    <a href="/pagephp/php.html"> <i class="uil uil-arrow-right i-php text-dark"></i> </i> </a>
+                </article>
+            </section>
+        </section>
+       
+    </main>
+
+
+    
+    <!-- FOOTER -->
+    <footer class="pt-5 bg-dark">
+        <p class="text-white">2021 - Slava Vincent Joffrey <i class="uil uil-copyright"></i></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="/assets/js/highlight.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+        <script src="js.js"></script>
+</body>
+
+</html>

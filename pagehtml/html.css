@@ -1,0 +1,245 @@
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* SCROLL BAR */
+body::-webkit-scrollbar {
+    width: 1px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white; /* color of the scroll thumb */
+    border-radius: 1px; /* roundness of the scroll thumb */
+    border: 1px dashed black; /* creates padding around scroll thumb */
+    
+  }
+
+  ::selection {
+      background-color: black;
+      color: white;
+  }
+
+/* ALL */
+* {
+    font-family: 'Roboto';
+}
+
+main {
+    background-color:rgb(245, 245, 245);
+}
+
+
+
+/* HEADER */
+
+
+
+/* NAVBAR */
+.text-nav {
+    font-size: 20px;
+    transition: .6s ease;
+}
+.icon-nav {
+    font-size: 35px;
+    color: white;
+    transition: .6s ease;
+}
+
+.icon-nav-scroll {
+    font-size: 35px;
+    color: black;
+    transition: .6s ease;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+
+/* RESPONSIVE NAVBAR TEXT */
+@media screen and (min-width:992px) {
+    .nav-link h3 {
+      display: none;
+    }
+  }
+
+/* ICON HOVER */
+.i-home:hover {
+    color: rgb(128, 123, 123)!important;
+  }
+  
+  .i-html:hover {
+    color: rgb(232, 79, 46)!important;
+  }
+  
+  .i-css:hover {
+    color: rgb(0, 113, 184)!important;
+  }
+  
+  .i-php:hover {
+    color: rgb(0, 115, 137)!important ;
+  }
+  
+  .i-js:hover {
+    color: rgb(98, 169, 108)!important;
+  }
+
+
+/* SECTION IMG */
+
+#html-section-img {
+    background-image: url("/assets/img/laptop1.jpeg");
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-position-x: right;
+    background-position-y: top;
+    
+}
+
+/* RESPONSIVE SECTION IMG */
+@media screen and (max-width:400px) {
+    
+  #html-section-img {
+      height: 300px;
+  }
+
+  #content-h1 {
+    font-size: 35px!important;
+  }
+
+}
+@media (min-width:401px) and (max-width:600px) {
+  
+  #html-section-img {
+      height: 400px;
+      
+  }
+  #content-h1 {
+    font-size: 40px!important;
+  }
+
+
+
+}	
+@media (min-width:601px) and (max-width:900px) {
+  
+  #html-section-img {
+      height: 500px;
+  }
+
+  #content-h1 {
+    font-size: 45px!important;
+  }
+
+}
+
+@media (min-width:901px) and (max-width:1300px) {
+  
+  #html-section-img {
+      height: 600px;
+      
+  }
+}
+
+
+/* SECTION CONTENT */
+
+/* ASIDE */
+
+.menuVertical {
+    top: 200px;
+    margin-left: 40px;
+    padding-top: 35px;
+    
+}
+
+aside {
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 370px;
+}
+
+aside a{
+    text-decoration: none;
+    color: gray;
+    transition: .6s ease;
+}
+
+aside a:hover {
+    color: black;
+}
+
+.accueilAside {
+  color: brown;
+}
+
+.goodScroll:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -95px;
+    height: 125px;  
+    visibility: hidden; 
+  }
+
+/* RESPONSIVE ASIDE */
+
+@media screen and (max-width:991px) {
+
+    aside {
+      display: none;
+    }
+}
+
+@media (min-width:992px) and (max-width:1100px) {
+ 
+  aside {
+    height: 450px;
+  }
+}
+
+
+/* CONTENT */
+#content-h1{
+    font-size: 55px;
+}
+
+.questionMark {
+    color: white;
+    font-size: 35px;
+}
+
+
+/* NAV FIN SECTION */
+
+
+#navbar-footer i {
+  font-size: 40px;
+}
+
+/* FOOTER */
+footer {
+    height: 150px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer div:first-child{
+    padding: 50px 0;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+   
+}

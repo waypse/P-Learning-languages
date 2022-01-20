@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../assets/css/agate.min.css">
+    <link rel="stylesheet" href="php.css">
+    <title>Apprendre la programmation web</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.1formatik.com/images/favicon/favicon-16x16.png">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="sticky-top">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-nav text-dark ms-4" href="/index.html">Créer un site internet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-3">
+                        <li class="nav-item">
+                            <a class="nav-link i-home" aria-current="page" href="../index.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-estate iconTest icon-nav-scroll i-home"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-home">Home</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagehtml/html.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-html5-alt iconTest icon-nav-scroll i-html"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-html">Html</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagecss/css.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-css3-simple iconTest icon-nav-scroll i-css"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-css">Css</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagejs/js.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-java-script iconTest icon-nav-scroll i-js"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-js">JavaScript</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-server-network-alt iconTest icon-nav-scroll i-php"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-php">Php</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION IMG -->
+        <section id="html-section-img">
+        </section>
+        <!-- SECTION CONTENT -->
+        <section id="content" class="container-fluid row">
+            <H1 id="content-h1" class="text-center p-5 text-decoration-underline goodScroll">Le PHP</span></H1>
+            <!-- ASIDE -->
+            <aside class="col-lg-2 bg-light sticky-top menuVertical">
+                <a href="#content-h1" id="home">
+                    <h3>Accueil</h3>
+                </a>
+                <br>
+                <a href="#formulaire" id="tag">
+                    <h3>Le formulaire</h3>
+                </a>
+                <br>
+                <a href="#page" id="creation">
+                    <h3>La page</h3>
+                </a>
+            </aside>
+            <!-- CONTENT -->
+            <section class="col-lg-6 offset-1  text-left mb-5">
+                <article>
+                    <h1>L'éléphant dans la pièce (en fait c'est le logo de PHP)</h1>
+                    <hr>
+                    <p>
+                        Php est un langage très importent dans un site Internet. C'est un langage dis "Back-End",
+                        c'est a dire
+                        qu'il agit en arrière fond de notre site sans avoir des éléments graphiques. Jusqu'a présent
+                        nous avons
+                        fait du "Front-end" avec le HTML, CSS et JS c'est a dire ce que l'on montre a l'utilisateur
+                        et avec quoi
+                        il peut intéragir. Nous allons donc apprendre a transférer des informations d'une page a
+                        l'autre.
+                    </p>
+                </article>
+                <article id="formulaire">
+                    <h1 class="goodScroll">Création d'un formulaire</h1>
+                    <hr>
+                    <p>
+                        Pour faire passer des informations dans un site, le moyen le plus simple est le formulaire.
+                        Nous allons
+                        en créer un très simple ou nous allons rentrer notre nom, prénom et adresse mail.
+                        <br>
+                        Nous allons donc retourner dans notre page web et rajouter dans notre body une nouvelle
+                        balise : la balise
+                        &lt;form&gt;.
+                    </p>
+                    <pre>
+                            <code class="html">
+&lt;form method="post" action="Nom_Du_Fichier.php"&gt;
+
+&lt;/form&gt;
+                            </code>
+                        </pre>
+                    <p>
+                        C'est dans cette balise que nous allons rentrer tout les éléments de notre formulaire
+                        Elle possède deux arguments importents, method qui indique la façon dont le formulaire doit
+                        envoyer les infos (dans notre exemple post) et action qui indique vers quel fichier les
+                        informations
+                        doivent être envoyés, donc toutes les informations contenues dans la balise form vont être
+                        envoyés
+                        via la methode post vers le fichier php que nous avons indiqué dans l'argument action.
+                    </p>
+                    <div class="d-flex align-items-center bg-secondary rounded p-3">
+                        <i class="uil uil-question-circle questionMark"></i>
+                        <p class="mb-0">Donc il va falloir créer un fichier .php et le connecter
+                            a notre page web comme pour le CSS ?
+                        </p>
+                    </div>
+                    <p>Oui ! Mais nous verrons ça plus tard, nous allons pour le moment nous concentrer sur la
+                        création de
+                        notre formulaire.
+                        <br>
+                        Nous allons commencer en parlant de la balise principale dans un formulaire ,la balise
+                        &lt;input&gt;
+                    </p>
+                    <pre>
+                        <code class="html">
+&lt;input type="Type_De_Champ" name="Nom_Du_Champ" /&gt;
+                        </code>
+                    </pre>
+                    <p>
+                        Cette balise permet de créer un champ ou rentrer une information qui va pouvoir être ensuite
+                        envoyer
+                        a notre page PHP pour pouvoir l'afficher ou la stocker. C'est une balise très polyvalente
+                        grâce a l'argument
+                        type qui permet de changer le contenu de la balise pour pouvoir contenir un certain type
+                        d'info
+                        <br>
+                        Voici quelques exemple de type d'input :
+                        <br>
+                        -text pour écrire un texte simple
+                        <br>
+                        -password pour écrire un mot de passe qui sera caché quand il sera écrit dans le champ
+                        <br>
+                        -email pour écrire une adresse mail, le navigateur saura que l'utilisateur doit écrire une
+                        adresse valide
+                        <br>
+                        -tel pour écrire un numéro de téléphone
+                        <br>
+                        <br>
+                        Et encore plein d'autres, mais pour notre formulaire nous allons utiliser deux type d'input
+                        : le text et le email.
+                    </p>
+                    <p>Trève de blabla, passons a la création de notre formulaire ! Nous voulons donc un formulaire
+                        qui va récupérer
+                        le nom prénom et email de notre utilisateur.
+                    </p>
+                    <pre>
+                        <code class="html">
+
+&lt;form method="post" action="formulaire.php"&gt;
+    &lt;input type="text" name="Nom" /&gt;
+    &lt;br&gt;
+    &lt;input type="text" name="prenom" /&gt;
+    &lt;br&gt;
+    &lt;input type="email" name="mail" /&gt;
+&lt;/form&gt;
+                        </code>
+                    </pre>
+                    <p>Notre formulaire comporte désormais des champs mais si vous essayez de lancer ce code vous
+                        remarquerez
+                        qu'il manque deux choses : un petit texte pour indiquer ce qu'il faut remplir dans le champs
+                        et un bouton
+                        pour envoyer toutes nos infos. Nous allons les ajouter maintenant.
+                    </p>
+                    <p>Pour le texte nous allons utiliser la balise &lt;label&gt; pour ajouter du texte, il suffit
+                        juste de
+                        mettre cette balise devant notre input avec le texte que l'on souhaite
+                    </p>
+                    <pre>
+                        <code class="html">
+&lt;label&gt;Votre nom&lt;/label&gt; &lt;input type="text" name="Nom" /&gt;
+                        </code>
+                    </pre>
+                    <p>Nous avons maintenant un petit texte devant notre champ qui indique ce qu'il faut remplir</p>
+                    <p>
+                        Passons au bouton, la balise que nous allons utiliser est encore la balise input
+                        <br>
+                        mais avec le type "submit"
+                    </p>
+                    <pre>
+                        <code class="html">
+&lt;input type="submit" name="bouton" value="envoyer" /&gt;
+                        </code>
+                    </pre>
+                    <p>Value permet de définir le texte a l'intérieur du bouton</p>
+                    <pre>
+                        <code class="html">
+&lt;form method="post" action="formulaire.php"&gt;
+    &lt;label&gt;Votre nom&lt;/label&gt;   &lt;input type="text" name="Nom" /&gt;
+    &lt;br&gt;
+    &lt;label&gt;Votre prenom&lt;/label&gt;&lt;input type="text" name="prenom" /&gt;
+    &lt;br&gt;
+    &lt;label&gt;Votre email&lt;/label&gt; &lt;input type="email" name="mail" /&gt;
+    &lt;br&gt;
+    &lt;input type="submit" name="bouton" value="envoyer" /&gt;
+&lt;/form&gt;
+                        </code>
+                    </pre>
+                    <p>Voici a quoi doit ressembler votre code, enregistrons le et lancons notre site</p>
+                    <img class="img-fluid" src="/assets/img/Formulaire.png">
+                    <p>Voilà a quoi ça devrais ressembler, maintenant nous allons faire en sorte que notre
+                        formulaire puisse
+                        envoyer ces infos et de pouvoir les afficher.
+                    </p>
+                </article>
+
+                <article id="page">
+                    <h1 class="goodScroll">Création de la page PHP</h1>
+                    <hr>
+                    <p>
+                        Pour afficher ces infos, nous allons créer une nouveau fichier qui sera cette fois çi au
+                        format PHP et qui
+                        a le même nom que le fichier php que vous appelez dans votre formulaire.
+                        Nous allons construire ce fichier php comme une page html avec un head un body etc etc.
+                        <br>
+                        Nous allons ensuite dans le body mettre une balise &lt;p&gt; qui va afficher un simple texte
+                        et dans cette balise p nous allons ouvrir une nouvelle balise réservé au php : la balise
+                        &lt;? php ?&gt;
+                    </p>
+                    <pre>
+                        <code class="php">
+&lt;?php ?&gt;
+                        </code>
+                    </pre>
+                    <p>
+                        Dans cette balise nous allons utiliser une fonction appelée echo qui permet d'afficher du
+                        texte.
+                        Nous allons ensuite demander a echo d'afficher une information que nous avons récupéré via
+                        la method post,
+                        ce qui se traduit par $_POST['Nom_Du_Champ']; .Dans le Nom_Du_Champ on mettra le nom du
+                        input qu'on a mis
+                        dans l'argument name.
+                    </p>
+                    <pre>
+                        <code class="php">
+
+&lt;p&gt; Votre nom est &lt;?php echo $_POST['nom']; ?&gt; &lt;/p&gt;
+&lt;p&gt; Votre prenom est &lt;?php echo $_POST['prenom']; ?&gt; &lt;/p&gt;
+&lt;p&gt; Votre email est &lt;?php echo $_POST['email']; ?&gt; &lt;/p&gt;
+
+                        </code>
+                    </pre>
+                    <p>
+                        Voilà a quoi doit ressembler le contenu de votre body dans votre fichier php
+                        <br>
+                        Vous pouvez enregistrer le code php et revenir sur votre formulaire, remplissez le et
+                        cliquez sur le bouton envoyer.
+                    </p>
+                    <img class="img-fluid" src="/assets/img/Formulaire_rempli.png">
+                    <p>Et voilà le travail. C'est du PHP extrêmement simple mais vous avez réussi a transférer des
+                        informations d'une
+                        page a l'autre ce qui est déjà pas mal !
+                    </p>
+                    <p>
+                        Nous avons donc fait le tour de notre initiation a ces quatres langages, si vous souhaitez
+                        approfondir le sujet
+                        je vous conseille les sites <a href="https://www.w3schools.com/" target="_blank">W3School</a>
+                        (en anglais)
+                        et les formations <a
+                            href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3"
+                            target="_blank"> OpenClassroom</a>
+                        (en français) qui vous permettront d'apprendre encore plus de choses dans le langage de
+                        votre choix.
+                    </p>
+                </article>
+                <article id="navbar-footer" class="col-lg-6 d-flex justify-content-between float-start">
+                    <a href="/pagejs/js.html"> <i class="uil uil-arrow-left i-js text-dark"></i> </a>
+                    <a href="/index.html"> <i class="uil uil-estate i-home text-dark"> </i> </a>
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="pt-5 bg-dark">
+        <p class="text-white">2021 - Slava Vincent Joffrey <i class="uil uil-copyright"></i></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/highlight.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+    <script src="php.js"></script>
+</body>
+
+</html>

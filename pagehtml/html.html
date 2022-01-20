@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../assets/css/agate.min.css">
+    <link rel="stylesheet" href="html.css">
+    <title>Apprendre la programmation web</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.1formatik.com/images/favicon/favicon-16x16.png">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="sticky-top">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-nav text-dark ms-4" href="/index.html">Créer un site internet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-3">
+                        <li class="nav-item">
+                            <a class="nav-link i-home" aria-current="page" href="../index.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-estate iconTest icon-nav-scroll i-home"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-home">Home</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-html5-alt iconTest icon-nav-scroll i-html"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-html">Html</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagecss/css.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-css3-simple iconTest icon-nav-scroll i-css"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-css">Css</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagejs/js.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-java-script iconTest icon-nav-scroll i-js"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-js">JavaScript</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagephp/php.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-server-network-alt iconTest icon-nav-scroll i-php"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-php">Php</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION IMG -->
+        <section id="html-section-img">
+        </section>
+
+        <!-- SECTION CONTENT -->
+        <section id="content" class="container-fluid row">
+            <h1 id="content-h1" class="text-center p-5 text-decoration-underline goodScroll">Le HTML</h1>
+            <!-- ASIDE -->
+            <aside class="col-lg-2 bg-light sticky-top menuVertical">
+                <a href="#content" id="home">
+                    <h3>Accueil</h3>
+                </a>
+                <br>
+                <a href="#balises" id="tag">
+                    <h3>Les Balises</h3>
+                </a>
+                <br>
+                <a href="#création" id="creation">
+                    <h3>Création de la page Web</h3>
+                </a>
+                <br>
+                <a href="#affichage" id="display">
+                    <h3>Affichage de la Page Web</h3>
+                </a>
+            </aside>
+            <!-- CONTENT -->
+            <section class="col-lg-6 col-sm-10 col-11 offset-1 text-left mb-5">
+                <article class="text-left mb-5">
+                    <h1>Premiers préparatifs</h1>
+                    <hr>
+                    <p>
+                        Pour faire un site digne de ce nom, il faut en premier quelques outils :
+                        <br>
+                        -Un editeur de texte, je vous conseille <a target="_blank"
+                            href="https://code.visualstudio.com/">VS
+                            Code</a>
+                        <br>
+                        -Un navigateur Internet (mais vu que vous êtes sur ce site j'imagine que vous en avez un).
+                        <br>
+                        -Et un peu de patience
+                    </p>
+                </article>
+                <article class="text-left mb-5">
+                    <h1>Création du fichier</h1>
+                    <hr>
+                    <p>
+                        Pour créer une page web, nous allons ouvrir VS Code et créer un nouveau fichier en cliquant sur
+                        Fichier puis sur
+                        Nouveau fichier (ou vous pouvez utiliser le raccourci Ctrl N)
+                    </p>
+                    <img class="mb-5 img-fluid" src="img/Nouveau_Fichier.png">
+                    <img class="img-fluid" src="img/Page_Vide.png">
+                    <p>Voici ou vous devriez être</p>
+                    <br>
+                    <p>Il vous suffit ensuite de cliquer sur Sélectionner un langage et de choisir "HTML" </p>
+
+                    <div class="d-flex align-items-center bg-secondary rounded p-3">
+                        <i class="uil uil-question-circle questionMark"></i>
+                        <p class="mb-0">Ok, tout ça c'est cool, mais c'est quand qu'on code ?</p>
+                    </div>
+
+                    <p>Et bien maintenant justement.
+                        <br>
+                        Nous allons poser les première briques de notre page web !
+                    </p>
+                </article>
+                <article class="text-left mb-5" id="balises">
+                    <h1 class="goodScroll">Les Balises</h1>
+                    <hr>
+                    <p>Pour créer une page web nous allons utiliser ce qu'on appelle des "Balises". Dans ces Balises
+                        Nous allons rentrer les informations de notre site. Je vais vous donner un exemple simple de
+                        balise
+                        avec la balise &lt;p&gt; qui représente en HTML un paragraphe.
+                        <br>
+                        <br>
+                        Une balise est composé d'une balise ouvrante et fermante :
+                        <br>
+                        Une balise ouvrante s'écrit avec des chevrons et le type de balise ( &lt;p&gt; )
+                        <br>
+                        Et une balise feramnte avec elle aussi des chevrons mais avec un / pour indiquer
+                        <br>
+                        qu'elle se ferme (&lt;/p&gt;)
+                        <br>
+                        <br>
+                    <p>Donc si on veut écrire "Les pâtes a la carbonara sont les meilleures", on va écrire :</p>
+                    <!--La Balise pre permet d'englober la balise code qui va afficher un code comme dans un éditeur de texte-->
+                    <pre class="mb-0">
+                    <code class="html text-left">
+&lt;p&gt;Les Pâtes a la carbonara sont les meilleures&lt;/p&gt;
+                    </code>
+                </pre>
+                    <p>Il existe aussi des balises dites "Orpheline" qui s'ont pas besoin de se fermer avec une balise
+                        fermante
+                        comme la balise &lt;img&gt; qui permet d'afficher une image. Il suffit juste de rentrer les
+                        informations dans
+                        la balise et le tour est joué.
+                    </p>
+                    <!-- Une div qui permet d'afficher une information qui joue le rôle des questions posées pendant l'explication-->
+                    <div class="d-flex align-items-center bg-secondary rounded p-3">
+                        <i class="uil uil-question-circle questionMark"></i>
+                        <p class="mb-0">
+                            Il suffit donc de mettre uniquement des paragraphes
+                            <br>
+                            et on peut créer un site comme ça ?
+                        </p>
+                    </div>
+                    <p>Pas exactement...</p>
+                    <p>Pour créer un site Web il faut respecter une structure de page pour faire en sorte que le code
+                        soit
+                        propre,
+                        structuré et que tout fonctionne correctement. Et il existe aussi une multitude de balises
+                        que nous n'avons pas encore vu. Nous allons voir ça maintenant
+                    </p>
+
+
+                </article>
+                <article class="text-left mb-5" id="création">
+                    <h1 class="goodScroll">Création de la page Web (enfin)</h1>
+                    <hr>
+                    <p>
+                        Il est maintenant temps de débuter la création de la page en elle même ! Pour le moment
+                        nous allons rester simple et créer une page web qui affichera la phrase de votre choix
+                        <br>
+                        (si possible sans grossièreté, mais c'est vous qui voyez.)
+                    </p>
+                    <br>
+                    <h3>Présentation du Code</h3>
+                    <pre class="mb-0">
+                <code class="html text-left" >
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt; Hello World &lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt; Hello World &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code>
+            </pre>
+                    <p>
+                        Voici donc a quoi va ressembler votre code, je vais maintenant vous expliquer la fonction de
+                        chaque
+                        balise,
+                        vous pouvez taper le code en même temps que vous lisez la fonction des balises (ou faire juste
+                        un
+                        copier coller
+                        et lancer la page, vous aurez déjà adopté les bonnes, ou mauvaises, manières d'un développeur)
+                    </p>
+                    <pre class="mb-0">
+                <code class="html text-left" >
+&lt;!DOCTYPE html&gt;
+                </code>
+            </pre>
+                    <p>La balise Doctype indique a notre navigateur Internet que la page que nous souhaitons afficher et
+                        de
+                        type HTML. Vous pouvez aussi remarquer que c'est une balise Orpheline
+                    </p>
+
+                    <pre class="mb-0">
+                <code class="html" >
+&lt;html&gt; &lt;/html&gt;
+                </code>
+            </pre>
+                    <p>La balise html va contenir absoument tout notre code notre code, on va donc mettre toutes nos
+                        balises
+                        Dans
+                        la balise html.
+                    </p>
+                    <br>
+                    <p>Ok, maintenant que nous avons notre balise html, nous allons diviser notre code en deux grandes
+                        parties: Le Head et
+                        le Body.
+                    </p>
+                    <div class="d-flex align-items-center bg-secondary rounded p-3">
+                        <i class="uil uil-question-circle questionMark"></i>
+                        <p class="mb-0">
+                            Ah c'est donc ça la fameuse "Structuration"
+                        </p>
+                    </div>
+
+                    <p>Et oui, dans notre balise head nous allons rentrer toutes les informations qui sont importentes
+                        pour
+                        la page qui ne
+                        sont pas affichées a l'utilisateur tel que le titre de l'onglet, la taille de la police etc etc.
+                        Et
+                        pour le body
+                        c'est tout ce qui va être afficher a l'utilisateur, on va donc retrouver notre texte, nos images
+                        etc
+                        etc.
+                    </p>
+                    <br>
+                    <p>Commençons par la balise head. Nous allons utiliser deux balises, la balise title et la balise
+                        meta
+                        charset</p>
+                    <br>
+
+                    <pre class="mb-0">
+                    <code class="html" >
+&lt;title&gt; &lt;/title&gt;
+                    </code>
+                </pre>
+                    <p>La Balise Title va indiquer le nom de l'onglet de la page web sur notre navigateur.</p>
+
+                    <pre class="mb-0">
+                    <code class="html" >
+&lt;meta charset="utf-8"&gt; 
+                    </code>
+                </pre>
+                    <p>La Balise meta charset permet d'indiquer au navigateur quel type de caractère il doit afficher
+                        sur
+                        notre Page
+                        web. La plus part du temps vous allez utiliser l'argument utf-8.
+                    </p>
+                    <pre class="mb-0">
+                    <code class="html" >
+&lt;head&gt;
+    &lt;title&gt; Hello World &lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+&lt;/head&gt;
+                    </code>
+                </pre>
+                    <p>Voici a quoi ressemble donc notre head pour le moment. Dans mon example quand nous allons ouvrir
+                        notre page web,
+                        le titre de l'onglet sera "Hello World"
+                    </p>
+                    <br>
+                    <p>Nous allons maintenant passer au Body
+                        <br>
+                        Et ça va être très court car nous allons utiliser pour le moment qu'une seule balise, la balise
+                        p
+                    </p>
+                    <pre class="mb-0">
+                    <code class="html" >
+&lt;p&gt; &lt;/p&gt;
+                    </code>
+                </pre>
+                    <p>La balise p permet d'afficher du texte dans notre page, il suffit juste de mettre ce que l'on
+                        veut
+                        Dans
+                        la balise comme dans l'exemple des pâtes dans la section au dessus.
+                    </p>
+
+                    <pre class="mb-0">
+                    <code class="html text-left" >
+&lt;body&gt;
+    &lt;p&gt; Hello World &lt;/p&gt;
+&lt;/body&gt;
+                    </code>
+                </pre>
+                    <p>Et voici le body. N'oubliez pas que le head et le body doivent être tout les deux dans la balise
+                        html.</p>
+                    <br>
+                    <img class="img-fluid" src="img/Hello_World_ecrit.png">
+                    <p>Voici donc a quoi votre code doit ressembler pour le moment. Il est venu le moment de le tester !
+                    </p>
+                </article>
+                <article class="text-left mb-5" id="affichage">
+                    <h1 class="goodScroll">Affichage de la Page Web</h1>
+                    <hr>
+                    <p>Maintenant que votre code est prêt, il est l'heure de l'exécuter !
+                        Vous allez devoir en premier l'enregistrer en cliquant sur fichier puis sur enregistrer
+                        ou en utilisant le reccourci Ctr s.
+                    </p>
+                    <img class="img-fluid" src="img/Enregistrer_Page_Web.png">
+                    <p>Pour le nom, vous pouvez l'appeler comme vous voulez, mais assurez vous juste que le fichier soit
+                        bien au format .html
+                    </p>
+                    <img class="img-fluid" src="img/Rendu_Bureau.png">
+                    <p>Vous devriez normalement vous retrouvez avec ce fichier, le logo dépendra de votre navigateur
+                        internet pas défault
+                        (pour ma part chrome). Si jamais vous ne pouvez pas l'ouvrir, il vous suffit de faire clique
+                        droit,
+                        ouvrir avec et de
+                        sélectionner votre navigateur internet.
+                    </p>
+                    <br>
+                    <br>
+                    <img class="img-fluid" src="img/Page_Web_rendu_final.png">
+                    <p>Et voila le travail !</p>
+                    <div class="d-flex align-items-center bg-secondary rounded p-3">
+                        <i class="uil uil-question-circle questionMark"></i>
+                        <p class="mb-0">
+                            ... Et c'est tout ?
+                        </p>
+                    </div>
+                    <p>Un peu aigri, mais pour le moment oui c'est tout. C'est déjà une grande étape, ce que Nous
+                        avons fait pour le moment n'est qu'une fraction de ce que le HTML est capable. Dans la prochaine
+                        section
+                        de ce site, nous allons vous apprende comment utiliser CSS pour donner un peu de couleur a votre
+                        site !
+                    </p>
+                </article>
+
+                <!--Menu en bas de la page permettant de revenir au menu ou bien de passer a la section suivante-->
+                <article id="navbar-footer" class="col-7 d-flex justify-content-between float-end">
+                    <a href="/index.html"> <i class="uil uil-estate i-home text-dark"> </i> </a>
+                    <a href="/pagecss/css.html"> <i class="uil uil-arrow-right i-css text-dark"></i> </i> </a>
+                </article>
+            </section>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="pt-5 bg-dark">
+        <p class="text-white">2021 - Slava Vincent Joffrey <i class="uil uil-copyright"></i></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/highlight.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+    <script src="html.js"></script>
+</body>
+
+</html>

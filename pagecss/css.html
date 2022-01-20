@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../assets/css/agate.min.css">
+    <link rel="stylesheet" href="css.css">
+    <title>Apprendre la programmation web</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.1formatik.com/images/favicon/favicon-16x16.png">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="sticky-top">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-nav text-dark ms-4" href="/index.html">Créer un site internet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-3">
+                        <li class="nav-item">
+                            <a class="nav-link i-home" aria-current="page" href="../index.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-estate iconTest icon-nav-scroll i-home"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-home">Home</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagehtml/html.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-html5-alt iconTest icon-nav-scroll i-html"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-html">Html</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-css3-simple iconTest icon-nav-scroll i-css"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-css">Css</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagejs/js.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-java-script iconTest icon-nav-scroll i-js"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-js">JavaScript</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pagephp/php.html">
+                                <div class="d-flex justify-content-center">
+                                    <i class="uil uil-server-network-alt iconTest icon-nav-scroll i-php"></i>
+                                    <h3 class="text-dark text-test mt-3 ms-2 i-php">Php</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION IMG -->
+        <section id="html-section-img">       
+        </section>
+        <!-- SECTION CONTENT -->
+        <section id="content" class="container-fluid row">
+            <h1 id="content-h1" class="text-center p-5 text-decoration-underline goodScroll">Le CSS</h1>
+            <!-- ASIDE -->
+            <aside class="col-lg-2 bg-light sticky-top menuVertical">
+                <a href="#content-h1" id="home">
+                    <h3>Accueil</h3>
+                </a>
+                <br>
+                <a href="#couleurs" id="tag">
+                    <h3>Les couleurs</h3>
+                </a>
+                <br>
+                <a href="#classes" id="creation">
+                    <h3>Les classes</h3>
+                </a>
+            </aside>
+            <!-- CONTENT -->
+            <section class="col-lg-6 col-sm-10 col-11 offset-1 text-left mb-5">
+                <article>
+                    <h1>CS quoi ?</h1>
+                    <hr>
+                    <p>
+                        Vous savez maintenant mettre du contenu dans une page, c'est déjà pas mal ! 
+                        Mais désormais il va falloir l'egayer un peu sinon votre site va être bien triste !
+                        C'est le travail du CSS de donner du style a votre Site, nous allons faire quelque chose
+                        de très simple pour le moment.
+                    </p>
+                </article>
+                <article>
+                    <h1>Connexion d'une page css a notre page Web</h1>
+                    <hr>
+                    <p>
+                        Pour cet exercice nous allons reprendre notre site web de la section précédente et nous allons
+                        rajouter une nouvelle balise dans la section head. Cette balise c'est &lt;link&gt; (non, pas le personnage)
+                    </p>
+                    <pre>
+                        <code class="html">
+&lt;link rel="stylesheet" href="Nom_Du_Fichier_CSS.css"&gt;
+                        </code>
+                    </pre>
+                    <p>Cette balise permet d'indiquer a notre page html qu'il doit utiliser un fichier CSS pour gérer les
+                        éléments graphiques de la page telle que la couleur ou bien la position. 
+                        rel permet de définir le type de fichier que nous utilisons, dans notre exemple "stylesheet" ou 
+                        dans la langue de Cyril Hanouna "Feuille de Style". Quand a href, il indique le chemin pour accéder
+                        a notre fichier css. Si on ne met pas de chemin et que l'on met directement le nom du fichier, il faut
+                        que le fichier html et css soient dans le même dossier.
+                    </p>
+                    <br>
+                    <p>Nous allons donc mettre cette balise dans notre head</p>
+                    <pre>
+                        <code class="html">
+&lt;head&gt;
+&lt;title&gt; Hello World &lt;/title&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+                        </code>
+                    </pre>
+                    <p>
+                        Voilà, nous avons indiqué a notre page web qu'il doit utiliser le fichier "style.css" comme feuille
+                        de style pour les éléments de la page.
+                        <br>
+                        Passons a la pratique !
+                    </p>
+                </article>
+
+                <article id="couleurs">
+                    <h1 class="goodScroll">Utilisons toutes les couleurs !</h1>
+                    <hr>
+                    <p>Maintenant que notre page est prête a utiliser notre fichier css, nous allons donc devoir le créer,
+                        pour faire ça, nous allons faire exactement comme nous avons fait pour créer le fichier html :
+                        <br>
+                        -Dans Vscode Cliquer sur Fichier / Nouveau Fichier
+                        <br>
+                        -Quand le fichier est créer cliquer sur Sélectionnez un langage et choisir CSS
+                    </p>
+                    <p>La façon d'écrire du CSS n'est pas la même que sur HTML, on retrouve un système similaire au balise
+                        mais pas écrit de la même façon, nous allons utiliser les { } (oui le truc que tu arrivais jamais a écrire
+                        a l'école)
+                    </p>
+
+                    <pre>
+                        <code class="css">
+Element_a_modifier {
+modification : valeur de la modification;
+}
+                        </code>
+                    </pre>
+
+                    <p>
+                        Et pour le nom des balises, ce sera l'élément que nous souhaitons modifier. Petit exemple, nous voulons
+                        modifier la couleur de notre phrase dans notre page web pour qu'elle soit rouge, nous allons donc écrire
+                    </p>
+
+                    <pre>
+                        <code class="css">
+p {
+color: red;
+}
+                        </code>
+                    </pre>
+                    <p>Essayez donc ! Utilisez ce code CSS, sauvegardez votre fichier css avec le nom style.css 
+                        (faites en sortes quel le fichier html et css soient dans le même dossier C'EST TRES IMPORTENT)
+                    </p>
+                    <img class="img-fluid" src="img/Hello_World_rouge.png">
+                    <p>Voilà a quoi ça devrais ressembler !</p>
+
+                </article>
+                
+                <article id="classes">
+                    <h1 class="goodScroll">Les Classes</h1>
+                    <hr>
+                    <div class="d-flex align-items-center bg-secondary rounded p-3">
+                        <i class="uil uil-question-circle questionMark"></i>
+                        <p class="mb-0">Mais du coup, si je modifie l'élément p, 
+                            cela va modifier tout le texte de ma page web ?
+                        </p>
+                    </div>
+                    <p>Exactement ! C'est pour ça que le système de classe existe pour pouvoir modifier un seul élément en
+                        particulier. Nous allons reprendre notre page web et y rajouter une nouvelle balise &lt;p&gt; et 
+                        nous allons lui ajouter une classe pour que le texte soit de couleur bleu a la place de rouge.
+                    </p>
+                    <pre>
+                        <code class="html">
+&lt;p class="phraseBleu"&gt; Hello World mais en bleu ! &lt;/p&gt;
+                        </code>
+                    </pre>
+                    <p>Comme vous pouvez le voir (sauf si vous êtes aveugle) nous avons rajouter a l'intérieur même de notre
+                        balise ouvrante l'argument "class" et nous l'avons appeler "phraseBleu", c'est cette classe que Nous
+                        allons utiliser dans notre css pour pouvoir modifier en particulier cet élément.
+                    </p>
+                    <p>Retournons dans notre CSS et appelons notre classe.</p>
+
+                    <pre>
+                        <code class="css">
+p {
+color: red;
+}
+
+.phraseBleu {
+color: blue;
+}
+                        </code>
+                    </pre>
+                    <p> Pour pouvoir appeler une classe personalisée, il faut mettre un point devant le nom de la classe
+                        que l'on souhaite appeler (donc dans notre exemple .phraseBleu).
+                    </p>
+                    <p>Enregistrons donc notre code CSS et testons donc.</p>
+                    <img class="img-fluid" src="img/Hello_World_Bleu.png">
+                    <p>Bingo</p>
+                    <p>Voila, vous savez désormais modifier la couleur d'un élément, mais tout comme le HTML, le CSS est un
+                        outil extrêmement puissant qui permet de faire passer une simple liste de course en un véritable
+                        site internet du 21ème siècle.
+                        <br>
+                        Dans la prochaine section, nous allons apprendre le JavaScript qui permettra d'ajouter un peu d'animation
+                        et d'intéractivité dans votre site.
+                    </p>
+                </article>
+
+                </article>
+                <article id="navbar-footer" class="col-lg-12 d-flex justify-content-between ">
+                    <a href="/pagehtml/html.html"> <i class="uil uil-arrow-left i-html text-dark"></i> </a>
+                    <a href="/index.html"> <i class="uil uil-estate i-home text-dark"> </i> </a>
+                    <a href="/pagejs/js.html"> <i class="uil uil-arrow-right i-js text-dark"></i> </i> </a>
+                </article>
+            </section>
+        </section>
+       
+    </main>
+
+
+    
+    <!-- FOOTER -->
+    <footer class="pt-5 bg-dark">
+        <p class="text-white">2021 - Slava Vincent Joffrey <i class="uil uil-copyright"></i></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="/assets/js/highlight.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
+        <script src="css.js"></script>
+</body>
+
+</html>
